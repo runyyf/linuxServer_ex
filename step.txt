@@ -1,0 +1,14 @@
+1.compile code_service(make)
+
+2.creat a shell bash  (for example code_service1)
+
+3.copy code_service /etc/init.d
+
+4.chmod +x code_service1
+
+5.chkconfig --add code_service1
+
+6.service code_service1 start
+
+
+

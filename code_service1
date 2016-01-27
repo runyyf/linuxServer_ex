@@ -1,0 +1,26 @@
+#! /bin/bash
+#chkconfig: 2345 80 05
+#description: code_service1
+
+case $1 in
+start)
+   echo "code_service1 startup"
+   /home/stb/sdb1/code_service/code_service &
+   exit 0 
+   ;;
+stop)
+   echo "code_server1 stop"
+   pkill code_service  
+ ;;
+
+restart)
+   echo "code_server1 stop"
+   echo "code_server1 startup"
+   ;;
+*)
+
+  ;;
+
+esac
+
+
